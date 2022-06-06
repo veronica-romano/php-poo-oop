@@ -2,6 +2,7 @@
 
 class Exemplo{
     public $nome;
+    public $escola;
 }
 
 ?>
