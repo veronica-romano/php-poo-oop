@@ -3,13 +3,18 @@
 
 //classes
 class Exemplo{
-    public $nome;
-    public $escola;
+    public string $nome;
+    public string $escola;
+    public string $cidade;
 }
 // objetos ou instâncias
 $exemploA = new Exemplo;
+$exemploB = new Exemplo;
 
-var_dump($exemploA)
+echo "<pre>";
+var_dump($exemploA);
+var_dump($exemploB);
+echo "</pre>";
 
 
 ?>
