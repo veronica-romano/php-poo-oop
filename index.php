@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POO - Exemplo 1</title>
+    <title>POO - Exemplo 2</title>
 </head>
 <body>
-    <h1>PHP POO Exemplo 1</h1>
+    <h1>PHP POO Exemplo 2</h1>
     <hr>
     <h2>Assuntos abordados:</h2>
     <ul>
-        <li>Criação da classe</li>
-        <li>Importação do arquivo de classe</li>
-        <li>Criação dos objetos</li>
+        <li>Criação dos Objetos</li>
+        <li>Uso do método construtor</li>
+        <li>uso do <code>$this</code> para acessar as propriedades</li>
+        
     </ul>
 
     <?php
     require_once "src/Cliente.php";
 
-    $clienteA = new Cliente;
-    $clienteB = new Cliente;
+    $clienteA = new Cliente('Glauber', 'gcantacini@gmail.com');
+    $clienteB = new Cliente('Veronica', 'veronica.lima.silva@uni9.edu.br');
     
     ?>
 
