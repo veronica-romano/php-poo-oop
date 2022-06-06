@@ -1,9 +1,16 @@
 <?php
 
+
+//classes
 class Exemplo{
     public $nome;
     public $escola;
 }
+// objetos ou instâncias
+$exemploA = new Exemplo;
+
+var_dump($exemploA)
+
 
 ?>
 
