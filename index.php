@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POO - Exemplo 4</title>
+    <title>POO - Exemplo 5</title>
 </head>
 <body>
-    <h1>PHP POO Exemplo 4</h1>
+    <h1>PHP POO Exemplo 5</h1>
     <hr>
     <h2>Assuntos abordados:</h2>
     <ul>
-        <li>Encapsulamento</li>
-        <li>Modificadores de visibilidade</li>  
-        <li>Métodos de acesso getters(leitura) e setters(definição)</li>   
+        <li>Herança</li>
     </ul>
 
     <?php
     require_once "src/Cliente.php";
-    // criação de objetos
-    $clienteA = new Cliente;
-    $clienteB = new Cliente;
+    require_once "src/PessoaFisica.php";
+    require_once "src/PessoaJuridica.php";
 
-    // atribuindo dados via setters
+    $clientePF = new PessoaFisica;
+    $clientePJ = new PessoaJuridica;
 
-    $clienteA->setNome("Veronica");
-    $clienteA->setEmail("vlsveronica@gmail.com");
-    $clienteA->setSenha("aaabbbccc");
+    $clientePF->setNome('Veronica');
+    $clientePF->setEmail('vlsveronica@gmail.com');
+    $clientePF->setCpf('352.966.783-88');
+    $clientePF->setSenha('abc123');
+    $clientePF->setIdade(28);
+
+    $clientePJ->setNome('SERVICO NACIONAL DE APRENDIZAGEM COMERCIAL');
+    $clientePJ->setNomeFantasia('SENAC PENHA');
+    $clientePJ->setEmail('penha@sp.senac.br');
+    $clientePJ->setCnpj('3709814000783');
+    $clientePJ->setSenha('abc123');
+    $clientePJ->setAnoFundacao(2000);
 
 
-    $clienteB->setNome("Glauber");
-    $clienteB->setEmail("gcantacini@gmail.com");
-    $clienteB->setSenha("111222333");
+
+
     
- 
-
-
-
     ?>
 
-    <h2>Dados dos objetos (leitura via getters)</h2>
-    <h3> <?=$clienteA->getNome()?> </h3>
-    <p>e-mail: <?=$clienteA->getEmail()?></p>
-    <p>senha: <?=$clienteA->getSenha()?></p>
-
-
-    <h3> <?=$clienteB->getNome()?> </h3>
-    <p>e-mail: <?=$clienteB->getEmail()?></p>
-    <p>senha: <?=$clienteB->getSenha()?></p>
+    <pre><?=  var_dump($clientePF) ?> </pre>
+    <pre><?=  var_dump($clientePJ) ?> </pre>
+  
 
 
 </body>
