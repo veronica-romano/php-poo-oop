@@ -1,5 +1,5 @@
 <?php
-
+require_once "Cliente.php";
 class PessoaFisica extends Cliente{
 
     private string $cpf;

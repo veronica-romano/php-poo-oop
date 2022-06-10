@@ -12,10 +12,11 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Herança</li>
+        <li>Classe abstrata</li>
     </ul>
 
     <?php
-    require_once "src/Cliente.php";
+    
     require_once "src/PessoaFisica.php";
     require_once "src/PessoaJuridica.php";
 
@@ -41,10 +42,6 @@
     
     ?>
 
-    <pre><?=  var_dump($clientePF) ?> </pre>
-    <pre><?=  var_dump($clientePJ) ?> </pre>
-  
-
-
+    
 </body>
 </html>
