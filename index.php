@@ -12,8 +12,9 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Herança</li>
-        <li>Classe abstrata</li>
-        <li>Classe final </li>
+        <li>Classe abstrata (não pode ser instanciada)</li>
+        <li>Classe final (não permite herança)</li>
+        <li>Métodos/propriedades protegidas (acessíveis apenas pelas subclasses)</li>
     </ul>
 
     <?php
