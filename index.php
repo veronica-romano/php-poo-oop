@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POO - Exemplo 5</title>
+    <title>POO - Exemplo 6</title>
 </head>
 <body>
-    <h1>PHP POO Exemplo 5</h1>
+    <h1>PHP POO Exemplo 6</h1>
     <hr>
     <h2>Assuntos abordados:</h2>
     <ul>
-        <li>Herança</li>
-        <li>Classe abstrata (não pode ser instanciada)</li>
-        <li>Classe final (não permite herança)</li>
-        <li>Métodos/propriedades protegidas (acessíveis apenas pelas subclasses)</li>
+        <li>Polimorfismo</li>
+        
     </ul>
 
     <?php
