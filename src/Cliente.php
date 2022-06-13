@@ -5,7 +5,7 @@ abstract class Cliente{
     private string $nome;
     private string $email;
     private string $senha;
-    private string $situacao;
+    private string $situacao = " a definir ";
 
     public function getNome():string{
         return $this->nome;
