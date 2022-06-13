@@ -12,18 +12,24 @@
     <h2>Assuntos abordados:</h2>
     <ul>
         <li>Polimorfismo</li>
+
         
     </ul>
+    <p>Para o polimorfismo ser possível, é obrigatório que os métodos tenham a mesma assinatura.</p>
+    <h3>O que é assinatura de método?</h3>
+    <li>Mesmo nome;</li>
+    <li>Mesma quantidade de parâmetros;</li>
+    <li>Mesmo tipo de dados nos parâmetros;</li>
+    <li>Mesmo tipo de retorno.</li>
 
     <?php
     
     require_once "src/PessoaFisica.php";
     require_once "src/PessoaJuridica.php";
-    require_once "src/Mei.php";
 
     $clientePF = new PessoaFisica;
     $clientePJ = new PessoaJuridica;
-    $clienteMei = new Mei;
+   
 
     $clientePF->setNome('Veronica');
     $clientePF->setEmail('vlsveronica@gmail.com');
@@ -32,25 +38,31 @@
     $clientePF->setIdade(28);
 
     $clientePJ->setNome('SERVICO NACIONAL DE APRENDIZAGEM COMERCIAL');
-    $clientePJ->setNomeFantasia('SENAC PENHA');
     $clientePJ->setEmail('penha@sp.senac.br');
     $clientePJ->setCnpj('3709814000783');
     $clientePJ->setSenha('abc123');
     $clientePJ->setAnoFundacao(2000);
 
-    $clienteMei->setNome('apoio tecnologico ltda');
-    $clienteMei->setNomeFantasia('Powerslave Tech');
-    $clienteMei->setEmail('tech@powerslave.br');
-    $clienteMei->setCnpj('378561563123');
-    $clienteMei->setSenha('123abc');
-    $clienteMei->setAnoFundacao(2023);
-    $clienteMei->setAreaDeAtuacao('Tecnologia');
 
     
     
     ?>
 
-    <pre><?=var_dump($clienteMei, $clientePF, $clientePJ);?></pre>
+    <pre><?=var_dump($clientePF, $clientePJ);?></pre>
+
+    <h3>Pessoa Física</h3>
+    <p><?=$clientePF->getNome()?></p>
+    <h3>Pessoa jurídica</h3>
+    <p><?=$clientePJ->getNome()?></p>
+
+    <section>
+        <?=$clientePF->exibirDados()?>
+    </section>
+
+    <section>
+        <?=$clientePJ->exibirDados()?>
+    </section>
+
 
 
     
