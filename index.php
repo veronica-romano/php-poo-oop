@@ -13,15 +13,18 @@
     <ul>
         <li>Herança</li>
         <li>Classe abstrata</li>
+        <li>Classe final </li>
     </ul>
 
     <?php
     
     require_once "src/PessoaFisica.php";
     require_once "src/PessoaJuridica.php";
+    require_once "src/Mei.php";
 
     $clientePF = new PessoaFisica;
     $clientePJ = new PessoaJuridica;
+    $clienteMei = new Mei;
 
     $clientePF->setNome('Veronica');
     $clientePF->setEmail('vlsveronica@gmail.com');
@@ -36,11 +39,20 @@
     $clientePJ->setSenha('abc123');
     $clientePJ->setAnoFundacao(2000);
 
-
-
+    $clienteMei->setNome('apoio tecnologico ltda');
+    $clienteMei->setNomeFantasia('Powerslave Tech');
+    $clienteMei->setEmail('tech@powerslave.br');
+    $clienteMei->setCnpj('378561563123');
+    $clienteMei->setSenha('123abc');
+    $clienteMei->setAnoFundacao(2023);
+    $clienteMei->setAreaDeAtuacao('Tecnologia');
 
     
+    
     ?>
+
+    <pre><?=var_dump($clienteMei, $clientePF, $clientePJ);?></pre>
+
 
     
 </body>

@@ -5,7 +5,8 @@ abstract class Cliente{
     private string $nome;
     private string $email;
     private string $senha;
-  
+    private string $situacao;
+
     public function getNome():string{
         return $this->nome;
     }
@@ -27,6 +28,17 @@ abstract class Cliente{
     }
     public function setSenha(string $senha){
         $this->senha = password_hash($senha, PASSWORD_DEFAULT);
+    }
+
+    public function getSituacao(): string
+    {
+        return $this->situacao;
+    }
+    public function setSituacao(string $situacao)
+    {
+        $this->situacao = $situacao;
+
+        return $this;
     }
 }
 ?>
